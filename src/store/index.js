@@ -12,11 +12,15 @@ export default new Vuex.Store({
       state.tasks.push(task);
 
       localStorage.setItem("tasks", JSON.stringify(state.tasks));
-    }
+    },
+    CLEAR_TASKS: () => localStorage.removeItem("tasks")
   },
   actions: {
     CREATE_TASK: (context, task) => {
       context.commit("CHANGE_TASK", task);
+    },
+    REMOVE_TASK: (context, task) => {
+      context.commit("CLEAR_TASKS", task);
     }
   },
   getters: {
