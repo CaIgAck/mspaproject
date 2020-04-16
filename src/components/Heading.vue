@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-toolbar dense dark max-height="70">
-      <v-toolbar-title>My Project</v-toolbar-title>
+      <v-toolbar-title>Проект Ванище</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <router-link to="/" class="btn"><v-btn>Home</v-btn></router-link>

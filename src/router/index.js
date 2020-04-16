@@ -16,7 +16,7 @@ const routes = [
     component: () => import("../views/viewTask.vue")
   },
   {
-    path: "/editTask",
+    path: "/editTask/:id",
     name: "editTask",
     component: () => import("../views/Change.vue")
   }
